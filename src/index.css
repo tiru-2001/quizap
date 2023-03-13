@@ -1,13 +1,115 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  padding: 0px ;
+  margin: 0px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(20, 39, 47);
+  color: whitesmoke;
 }
+
+
+.containerP{
+  /* border: 3px solid yellow; */
+  padding: 5px 20px;
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+justify-content: center;
+justify-content: center;
+align-items: center;
+display: flex;
+width: 50%;
+
+ 
+}
+
+
+
+/* grid container */
+
+.gridcontainer{
+
+min-width: 100%;
+display: grid;
+grid-template-columns:auto 300px auto;
+align-items: start;
+grid-gap: 4px ;
+
+
+
+}
+
+.gridcontainer .gridchild{
+
+  text-align: center;
+
+
+  padding: 20px 0px;
+}
+
+#grid2{
+  grid-area: 1/2/3/4;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+
+}
+#grid3{
+  align-self: start;
+  margin-top: -50px;
+}
+
+.answerbuttons{
+  padding: 5px 25px;
+  width:50%;
+  border-radius: 5px ;
+  margin: 10px;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(250, 230, 210, 0.683);
+  border: 3px solid wheat;
+
+
+}
+.answerbuttons:hover{
+background-color: gray;
+}
+.answerbuttons:active{
+  transform: scale(0.9);
+}
+
+.que{
+  font-size: 1.8rem;
+}
+
+.finalscore{
+  text-align: center;
+}
+
+.resetbutton{
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: none;
+
+  }
+  .resetbutton:hover{
+    background-color: grey;
+  }
+
+  .resetbutton:active{
+    transform: scale(.9);
+  }
