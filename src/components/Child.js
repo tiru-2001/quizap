@@ -20,7 +20,6 @@ const Child = () => {
         "https://the-trivia-api.com/api/questions?categories=history,geography&limit=11&region=IN&difficulty=medium"
       );
       setdata(resul.data);
-      console.log(resul);
     } catch (e) {
       console.log(e);
     }
@@ -34,7 +33,6 @@ const Child = () => {
     ...data[incre].incorrectAnswers,
   ].sort();
 
-  console.log(answerArray);
   const handleanswer = (da) => {
     if (incre < data.length) {
       if (da === data[incre].correctAnswer) {
